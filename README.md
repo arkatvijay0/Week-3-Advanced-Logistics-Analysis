@@ -154,31 +154,6 @@ Based on the analysis:
 
 ---
 
-## Project Structure
-
-```text
-Week-3-Advanced-Logistics-Analysis/
-│
-├── dataset/
-│   └── week3_logistics_cleaned_dataset.csv
-│
-├── notebook/
-│   └── Week_3_Logistics_Analysis.ipynb
-│
-├── visualizations/
-│   ├── 01_distributions.png
-│   ├── 02_correlation_heatmap.png
-│   ├── 03_strongest_relationship.png
-│   ├── 04_daily_shipment_trend.png
-│   └── 05_outlier_analysis.png
-│
-├── report/
-│   └── Week_3_Logistics_Analysis_Report.docx
-│
-└── README.md
-```
-
----
 
 ## Deliverables
 
