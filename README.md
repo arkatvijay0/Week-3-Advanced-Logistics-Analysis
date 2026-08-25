@@ -2,99 +2,215 @@
 
 ## Project Overview
 
-This project focuses on advanced exploratory data analysis and visualization of logistics shipment data using Python.
+This project focuses on advanced data analysis and visualization of logistics shipment data using Python.
 
-The analysis examines numerical distributions, central tendency, correlations, shipment trends, and outliers to identify meaningful patterns and support data-driven logistics decision-making.
+The objective is to explore logistics data, identify important patterns and relationships, analyze shipment activity, detect potential anomalies, and derive data-driven insights that can support logistics and supply-chain decision-making.
+
+---
 
 ## Objectives
 
-- Perform exploratory data analysis on logistics data
-- Calculate central tendency and descriptive statistics
-- Analyze distributions of numerical variables
-- Identify relationships between logistics variables
-- Analyze shipment volume trends over time
-- Detect potential outliers
-- Generate meaningful logistics insights
-- Provide recommendations based on analytical findings
+* Perform exploratory data analysis (EDA) on logistics data.
+* Calculate descriptive statistics and central tendency measures.
+* Analyze distributions of numerical logistics variables.
+* Identify relationships between numerical variables using correlation analysis.
+* Analyze shipment volume trends over time.
+* Detect potential outliers in logistics data.
+* Create meaningful visualizations for logistics performance analysis.
+* Derive analytical insights and practical recommendations.
+
+---
 
 ## Dataset
 
-The project uses a cleaned logistics shipment dataset containing:
+The project uses a cleaned logistics dataset containing:
 
-- 32,065 records
-- 26 variables
+* **32,065 records**
+* **26 variables**
 
-The dataset was cleaned and prepared before analysis.
+The dataset represents logistics and shipment-related information suitable for exploratory analysis and visualization.
 
 ### Data Preparation
 
-The following steps were performed:
+The following data preparation steps were performed:
 
-- Standardized column names
-- Converted timestamp data to datetime format
-- Checked for missing values
-- Checked for duplicate records
-- Created date information for time-based analysis
+* Standardized column names.
+* Converted timestamp information into datetime format.
+* Checked for missing values.
+* Checked for duplicate records.
+* Created date information for time-based analysis.
+* Preserved valid observations and did not unnecessarily remove outliers.
+
+---
 
 ## Technologies Used
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Jupyter Notebook
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Jupyter Notebook
 
-## Analysis Performed
+---
 
-### 1. Exploratory Data Analysis
+## Exploratory Data Analysis
 
-Descriptive statistics were calculated to understand the central tendency, spread, and range of numerical logistics variables.
+The following analyses were performed:
+
+### 1. Descriptive Statistics
+
+Calculated:
+
+* Mean
+* Median
+* Standard deviation
+* Minimum
+* Maximum
+
+These measures were used to understand the central tendency and variability of numerical logistics variables.
 
 ### 2. Distribution Analysis
 
-Histograms were created to understand the distribution of numerical variables.
+Histograms were used to examine the distributions of numerical variables and identify:
+
+* Data concentration
+* Variability
+* Skewness
+* Potential unusual observations
 
 ### 3. Correlation Analysis
 
-A correlation matrix and heatmap were used to identify relationships between numerical logistics variables.
+A correlation matrix and heatmap were created to identify relationships between numerical logistics variables.
 
-### 4. Relationship Analysis
+The strongest relationships were further investigated using a scatter plot.
 
-A scatter plot was created for the strongest numerical relationship identified in the dataset.
+### 4. Shipment Trend Analysis
 
-### 5. Shipment Trend Analysis
+Daily shipment volume was analyzed to identify:
 
-Daily shipment volume was analyzed to identify fluctuations in logistics activity over time.
+* High-volume periods
+* Low-volume periods
+* Shipment fluctuations
+* Potential capacity-planning requirements
 
-### 6. Outlier Analysis
+### 5. Outlier Analysis
 
 Box plots were used to identify unusually high or low observations.
 
+Outliers were not automatically removed because extreme logistics observations can represent genuine operational cases.
+
+---
+
 ## Visualizations
 
-The project includes:
+The project includes the following visualizations:
 
-1. Numerical variable distributions
-2. Correlation heatmap
-3. Strongest numerical relationship
-4. Daily shipment volume trend
-5. Outlier analysis
+### Numerical Distributions
 
-## Key Insights
+Shows the distribution of numerical logistics variables.
+
+### Correlation Heatmap
+
+Shows the strength and direction of relationships between numerical variables.
+
+### Strongest Numerical Relationship
+
+A scatter plot showing the strongest numerical relationship identified in the dataset.
+
+### Daily Shipment Trend
+
+Shows changes in shipment volume over time.
+
+### Outlier Analysis
+
+Uses box plots to identify potential unusual observations.
+
+---
+
+## Key Analytical Insights
 
 The analysis provides insights into:
 
-- Distribution and variability of logistics measurements
-- Relationships between numerical logistics variables
-- Shipment volume fluctuations
-- Potential operational exceptions
-- Variables that may require further investigation
+* Distribution and variability of logistics measurements.
+* Relationships between numerical logistics variables.
+* Shipment-volume fluctuations over time.
+* Potential operational exceptions.
+* Variables that may require further investigation.
 
-## Recommendations
+The strongest correlation identified during the analysis was investigated using a scatter plot to better understand the relationship between the corresponding variables.
 
-- Monitor strongly related logistics variables for operational and cost relationships.
-- Use shipment trends for capacity and resource planning.
-- Investigate extreme observations rather than automatically removing them.
-- Use the EDA results as a baseline for future predictive logistics analysis.
-- Repeat the analysis periodically using updated logistics data.
+---
+
+## Logistics Recommendations
+
+Based on the analysis:
+
+1. Monitor strongly correlated logistics variables to understand important operational relationships.
+2. Use shipment-volume trends for resource and capacity planning.
+3. Investigate extreme observations individually before deciding whether they represent errors or genuine operational cases.
+4. Use the identified relationships as a starting point for future predictive logistics analysis.
+5. Periodically repeat the analysis using updated shipment data to monitor changing operational patterns.
+
+---
+
+## Project Structure
+
+```text
+Week-3-Advanced-Logistics-Analysis/
+│
+├── dataset/
+│   └── week3_logistics_cleaned_dataset.csv
+│
+├── notebook/
+│   └── Week_3_Logistics_Analysis.ipynb
+│
+├── visualizations/
+│   ├── 01_distributions.png
+│   ├── 02_correlation_heatmap.png
+│   ├── 03_strongest_relationship.png
+│   ├── 04_daily_shipment_trend.png
+│   └── 05_outlier_analysis.png
+│
+├── report/
+│   └── Week_3_Logistics_Analysis_Report.docx
+│
+└── README.md
+```
+
+---
+
+## Deliverables
+
+### Dataset
+
+Cleaned logistics dataset used for the analysis.
+
+### Jupyter Notebook
+
+Contains the complete Python workflow including:
+
+* Data loading
+* Data inspection
+* Data cleaning
+* EDA
+* Statistical analysis
+* Correlation analysis
+* Visualization
+* Outlier analysis
+
+### Visualizations
+
+Five final visualizations generated using Python.
+
+### Report
+
+A detailed DOC report containing the methodology, analysis, visualizations, interpretations, insights, and recommendations.
+
+---
+
+## Conclusion
+
+This project demonstrates the application of Python-based exploratory data analysis and visualization techniques to logistics data.
+
+The analysis provides a structured approach for understanding shipment patterns, identifying relationships between logistics variables, detecting unusual observations, and generating insights that can support data-driven logistics and supply-chain decisions.
