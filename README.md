@@ -189,3 +189,13 @@ A detailed DOC report containing the methodology, analysis, visualizations, inte
 This project demonstrates the application of Python-based exploratory data analysis and visualization techniques to logistics data.
 
 The analysis provides a structured approach for understanding shipment patterns, identifying relationships between logistics variables, detecting unusual observations, and generating insights that can support data-driven logistics and supply-chain decisions.
+
+---
+
+👨‍💻 Project Author
+
+Vijay Kumar A G
+
+M.Tech – Data Science
+
+This project was completed as part of an internship task.
